@@ -1,21 +1,9 @@
-<div align="center">
-  <img src="assets/Echo_github.png" alt="Echo Music Logo" width="140"/>
+## Fork of [Echo Music Desktop](https://github.com/EchoMusicApp/Echo-Music-Desktop) by [@Aditya](https://github.com/iad1tya).
 
-  <h1>Echo Music Desktop</h1>
-
-  <p><strong>A robust, open-source music streaming client for Desktop</strong></p>
-  <p>Ad-free experience, offline capabilities, and advanced music discovery.</p>
-
-  <br/>
-
-  <a href="https://github.com/EchoMusicApp/Echo-Music-Desktop/releases/download/v1.0/EchoMusic.exe">
-    <img src="assets/Windows-button.png" alt="Download for Windows" width="170"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/EchoMusicApp/Echo-Music-Desktop/releases/download/v1.0/EchoMusic.dmg">
-    <img src="assets/mac-button.png" alt="Download for Mac" width="170"/>
-  </a>
-</div>
+Changes:
+* Fixed playlists
+* Added shuffle feature
+* Stylistic changes
 
 ---
 
