@@ -59,7 +59,7 @@ class SettingsManager extends ChangeNotifier {
   _init() {
     _themeMode = _themeModes[_box.get('THEME_MODE', defaultValue: 0)];
     _language = _languages.firstWhere((language) =>
-        language['value'] == _box.get('LANGUAGE', defaultValue: 'en-IN'));
+        language['value'] == _box.get('LANGUAGE', defaultValue: 'en'));
     _autofetchSongs = _box.get('AUTOFETCH_SONGS', defaultValue: true);
     _accentColor = _box.get('ACCENT_COLOR') != null
         ? Color(_box.get('ACCENT_COLOR'))
@@ -68,7 +68,7 @@ class SettingsManager extends ChangeNotifier {
     _dynamicColors = _box.get('DYNAMIC_COLORS', defaultValue: false);
 
     _location = _countries.firstWhere((country) =>
-        country['value'] == _box.get('LOCATION', defaultValue: 'IN'));
+        country['value'] == _box.get('LOCATION', defaultValue: 'US'));
 
     _streamingQuality =
         _audioQualities[_box.get('STREAMING_QUALITY', defaultValue: 0)];
