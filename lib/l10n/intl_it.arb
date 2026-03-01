@@ -182,6 +182,8 @@
   "@Download": {},
   "Add_To_Playlist": "Aggiungi alla playlist",
   "@Add_To_Playlist": {},
+  "Remove_From_Playlist": "Rimuovi dalla playlist",
+  "@Remove_From_Playlist": {},
   "Start_Radio": "Avvia radio",
   "@Start_Radio": {},
   "Album": "Album",

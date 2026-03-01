@@ -164,6 +164,8 @@
     "@Download": {},
     "Add_To_Playlist": "Çalma Listesine Ekle",
     "@Add_To_Playlist": {},
+    "Remove_From_Playlist": "Çalma Listesinden Çıkar",
+    "@Remove_From_Playlist": {},
     "Start_Radio": "Radyo Başlat",
     "@Start_Radio": {},
     "Album": "Albüm",

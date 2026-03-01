@@ -197,6 +197,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "Remove_From_Library": MessageLookupByLibrary.simpleMessage(
       "Rimuovi dalla libreria",
     ),
+    "Remove_From_Playlist": MessageLookupByLibrary.simpleMessage(
+      "Rimuovi dalla playlist",
+    ),
     "Remove_From_YTMusic_Message": MessageLookupByLibrary.simpleMessage(
       "Sei sicuro di volerlo rimuovere da YTMusic?",
     ),

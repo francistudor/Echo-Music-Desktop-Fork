@@ -742,6 +742,16 @@ class S {
     );
   }
 
+  /// `Remove From Playlist`
+  String get Remove_From_Playlist {
+    return Intl.message(
+      'Remove From Playlist',
+      name: 'Remove_From_Playlist',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Start Radio`
   String get Start_Radio {
     return Intl.message('Start Radio', name: 'Start_Radio', desc: '', args: []);

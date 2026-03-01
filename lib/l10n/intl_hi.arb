@@ -164,6 +164,8 @@
     "@Download": {},
     "Add_To_Playlist": "प्लेलिस्ट में जोड़ें",
     "@Add_To_Playlist": {},
+    "Remove_From_Playlist": "प्लेलिस्ट से हटाएं",
+    "@Remove_From_Playlist": {},
     "Start_Radio": "रेडियो शुरू करें",
     "@Start_Radio": {},
     "Album": "एल्बम",

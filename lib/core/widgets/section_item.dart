@@ -310,12 +310,12 @@ class SongTile extends StatelessWidget {
         },
         onSecondaryTap: () {
           if (song['videoId'] != null) {
-            Modals.showSongBottomModal(context, song);
+            Modals.showSongBottomModal(context, song, playlistId: playlistId);
           }
         },
         onLongPress: () {
           if (song['videoId'] != null) {
-            Modals.showSongBottomModal(context, song);
+            Modals.showSongBottomModal(context, song, playlistId: playlistId);
           }
         },
         title: Text(song['title'] ?? "", maxLines: 1),

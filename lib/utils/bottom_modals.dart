@@ -120,14 +120,14 @@ class Modals {
     );
   }
 
-  static void showSongBottomModal(BuildContext context, Map song) {
+  static void showSongBottomModal(BuildContext context, Map song, {String? playlistId}) {
     showGlassWindow(
       context: context,
       child: _GlassWindow(
         title: "Song Options",
         width: 400,
         height: 600,
-        child: _SongWindowContent(song: song),
+        child: _SongWindowContent(song: song, playlistId: playlistId),
       ),
     );
   }
@@ -2197,7 +2197,8 @@ class _TimerWindowContentState extends State<_TimerWindowContent> {
 
 class _SongWindowContent extends StatelessWidget {
   final Map song;
-  const _SongWindowContent({required this.song});
+  final String? playlistId;
+  const _SongWindowContent({required this.song, this.playlistId});
 
   @override
   Widget build(BuildContext context) {
@@ -2314,6 +2315,20 @@ errorWidget: (context, url, error) => const Icon(Icons.music_note),
           onTap: () {
             Navigator.pop(context);
             Modals.addToPlaylist(context, song);
+          },
+        ),
+        if (playlistId != null)
+        _buildAction(
+          context,
+          icon: Icons.remove_circle,
+          title: S.of(context).Remove_From_Playlist,
+          onTap: () async {
+            Navigator.pop(context);
+            final message = await GetIt.I<LibraryService>().removeFromPlaylist(
+              item: song,
+              playlistId: playlistId!,
+            );
+            BottomMessage.showText(context, message);
           },
         ),
         _buildAction(
