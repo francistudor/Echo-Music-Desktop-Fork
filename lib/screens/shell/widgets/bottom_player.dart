@@ -117,30 +117,18 @@ class _BottomPlayerState extends State<BottomPlayer> {
                                       if (currentSong.artist != null ||
                                           currentSong.extras!['subtitle'] !=
                                               null)
-                                      GestureDetector(
-                                        onTap: () {
-                                          if (mediaPlayer.currentSongNotifier.value!.extras!['artists'] != null) {
-                                            Modals.showArtistsBottomModal(
-                                              context,
-                                              mediaPlayer.currentSongNotifier.value!.extras!['artists'],
-                                              leading: mediaPlayer.currentSongNotifier.value!.extras!['thumbnails'].first['url'],
-                                              shouldPop: true,
-                                            );
-                                          }
-                                        },
-                                        child: Text(
-                                          currentSong.artist ??
-                                              currentSong
-                                                  .extras!['subtitle'],
-                                          maxLines: 1,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            color:
-                                                Colors.white.withValues(alpha: 0.8),
-                                          ),
+                                      Text(
+                                        currentSong.artist ??
+                                            currentSong
+                                                .extras!['subtitle'],
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color:
+                                              Colors.white.withValues(alpha: 0.8),
                                         ),
-                                      )
+                                      ),
                                     ],
                                   ),
                                 ),
