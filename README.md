@@ -39,18 +39,18 @@ Echo Music Desktop brings the premium listening experience to your computer. Bui
 ## Installation
 
 ### Windows
-1. Download the latest `.exe` installer from the [Releases Page](https://github.com/iad1tya/Echo-Music/releases/latest).
+1. Build the `.exe` file.
 2. Run the installer and follow the on-screen prompts.
 
 ### macOS
-1. Download the `.dmg` file from the [Releases Page](https://github.com/iad1tya/Echo-Music/releases/latest).
+1. Build the `.dmg` file.
 2. Open the disk image and drag Echo Music to your Applications folder.
 3. If you see a security warning, go to **System Settings → Privacy & Security** and allow the app.
 
 ### Linux
 Echo Music is available as an AppImage, DEB, and RPM package.
 
-1. Download the appropriate package from the [Releases Page](https://github.com/iad1tya/Echo-Music/releases/latest).
+1. Download the appropriate package from the [Releases Page](https://github.com/francistudor/Echo-Music-Desktop-Fork/releases/latest).
 2. **AppImage** — Make it executable and run it:
    ```bash
    chmod +x Echo-Music-*.AppImage && ./Echo-Music-*.AppImage
@@ -70,7 +70,7 @@ Ensure Flutter is installed and configured for desktop development.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/iad1tya/Echo-Music.git
+   git clone https://github.com/francistudor/Echo-Music-Desktop-Fork.git
    cd Echo-Music
    ```
 
