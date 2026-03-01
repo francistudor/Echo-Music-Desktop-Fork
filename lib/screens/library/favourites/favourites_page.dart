@@ -61,23 +61,7 @@ class _FavouritesBody extends StatelessWidget {
                       key: ObjectKey(song),
                       backgroundColor: Colors.transparent,
                       trailingActions: [
-                        SwipeAction(
-                          title: S.of(context).Remove,
-                          color: Colors.red,
-                          onTap: (handler) async {
-                            final confirm = await Modals.showConfirmBottomModal(
-                              context,
-                              message: S.of(context).Remove_Message,
-                              isDanger: true,
-                            );
-
-                            if (confirm && context.mounted) {
-                              context
-                                  .read<FavouritesCubit>()
-                                  .remove(song['id'] ?? song['videoId']);
-                            }
-                          },
-                        ),
+                        
                       ],
                       child: LibraryTile(
                         songs: songs,

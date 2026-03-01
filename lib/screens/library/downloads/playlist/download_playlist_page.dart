@@ -92,28 +92,7 @@ class _PlaylistView extends StatelessWidget {
                       key: ObjectKey(song['videoId']),
                       backgroundColor: Colors.transparent,
                       trailingActions: [
-                        SwipeAction(
-                          title: S.of(context).Remove,
-                          color: Colors.red,
-                          onTap: (handler) async {
-                            await Modals.showConfirmBottomModal(
-                              context,
-                              message: S.of(context).Remove_Message,
-                              isDanger: true,
-                            );
-
-                            // if (confirm) {
-                            //   final message = await context
-                            //       .read<DownloadPlaylistCubit>()
-                            //       .removeSong(song);
-
-                            //   BottomMessage.showText(
-                            //     context,
-                            //     message.toString(),
-                            //   );
-                            // }
-                          },
-                        ),
+                        
                       ],
                       child: DownloadedSongTile(song: song),
                     );
