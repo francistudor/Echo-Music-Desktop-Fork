@@ -24,7 +24,7 @@ class UpdateService {
 
       // Fetch the update JSON
       final Uri uri = Uri.parse(
-        'https://raw.githubusercontent.com/iad1tya/Echo-Music/main/desktop_update.json',
+        'https://raw.githubusercontent.com/francistudor/Echo-Music-Desktop-Fork/refs/heads/main/desktop_update.json',
       );
 
       final response = await http.get(uri);
@@ -32,7 +32,7 @@ class UpdateService {
       if (response.statusCode != 200) return null;
 
       final Map<String, dynamic> data = jsonDecode(response.body);
-      final String remoteVersionString = data['version']?.toString() ?? '1.0.0';
+      final String remoteVersionString = data['version']?.toString() ?? '1.1.1';
       
       // Handle "1.0" by appending ".0.0" if needed for semantic versioning
       Version remoteVersion;
@@ -51,14 +51,14 @@ class UpdateService {
         }
       }
 
-      // User requested: "if the version dont match with app one then should the update is avaialbe"
+      // User requested: "if the version dont match with app one then should the update is available"
       if (remoteVersion != currentVersion) {
         return UpdateInfo(
           version: remoteVersion,
           name: 'New Update Available',
           body: 'A new version of Echo Music is available. Please update to continue.',
           publishedAt: '',
-          downloadUrl: 'https://echomusic.fun',
+          downloadUrl: 'https://github.com/francistudor/Echo-Music-Desktop-Fork/releases/latest',
         );
       }
       
