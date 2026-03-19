@@ -1,11 +1,5 @@
 ## Fork of [Echo Music Desktop](https://github.com/EchoMusicApp/Echo-Music-Desktop) by [@Aditya](https://github.com/iad1tya).
 
-Changes:
-* Fixed playlists
-* Added shuffle feature
-* Stylistic changes
-
----
 
 ## Overview
 
